@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript For Loop</h2>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+
+for (statement 1; statement 2; statement 3) {
+    Statement 1 sets a variable before the loop starts (let i = 0).
+    Statement 2 defines the condition for the loop to run (i must be less than 5).
+    Statement 3 increases a value (i++) each time the code block in the loop has been executed.
+  }
+
+<script>
+        const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+        let text1 = "";
+        for (let i = 0; i < cars.length; i++) {
+        text1 += cars[i] + "<br>";
+        }
+
+        document.getElementById("demo").innerHTML = text1;
+
+
+
+
+        let text = "";
+
+        for (let i = 0; i <= 5; i++) {
+        text += "The number is " + i + "<br>";
+        }
+
+        document.getElementById("demo1").innerHTML = text;
+</script>
+
+</body>
+</html>
