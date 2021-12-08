@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <body>
-<p>Click the button to create a P element with some text.</p>
-<button onclick="myFunction()">Click Me!</button>
+
+<h2>My First Page</h2>
+
+<p id="demo"></p>
 
 <script>
-function myFunction() {
-  var para = document.createElement("P");
-  para.innerText = "This is a paragraph.";
-  document.body.appendChild(para);
-}
+  // In the example above, getElementById is a method,
+  //  while innerHTML is a property.(getting or replacing the content of HTML elements.)
+document.getElementById("demo").innerHTML = "Hello World!";
 </script>
 
 </body>
