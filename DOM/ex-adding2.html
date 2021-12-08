@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">The text above has been created dynamically.</div>
+<script>
+       document.body.onload = addElement;
+
+    function addElement () {
+    // crée un nouvel élément div
+    var newDiv = document.createElement("div");
+    // et lui donne un peu de contenu
+    var newContent = document.createTextNode('Hi there and greetings!');
+    // ajoute le nœud texte au nouveau div créé
+    newDiv.appendChild(newContent);
+
+    // ajoute le nouvel élément créé et son contenu dans le DOM
+    var currentDiv = document.getElementById('div1');
+    document.body.appendChild(newDiv, currentDiv);
+    }
+
+    </script>
+</body>
+</html>

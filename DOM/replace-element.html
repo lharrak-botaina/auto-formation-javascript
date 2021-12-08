@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Replace an Element with another Element in the DOM</title>
+</head>
+<body>
+    <h1>Replace</h1>
+	<ul id="mylist">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+	<script>
+   	const mylist = document.getElementById("mylist");
+       const CSSListItem = mylist.children[1];
+
+
+    //    create a new element /Node
+    const newListItem = document.createElement("li");
+    newListItem.textContent="jQuery";
+
+    mylist.replaceChild(newListItem, CSSListItem);
+	</script>
+</body>
+</html>
