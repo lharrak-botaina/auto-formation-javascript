@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        class Student{
-            constructor(name, age, major){
-            this.name = name;
-            this.age = age;
-            this.major = major;
-        }
+        class Student {
+            constructor(name, age, major) {
+                this.name = name;
+                this.age = age;
+                this.major = major;
+            }
 
-        introduction(){
-            console.log(`I'm ${this.name}, ${this.age} years old. 
-                        I'm a student of ${this.major}. `
-                        );
-        }
+            introduction() {
+                console.log(`I'm ${this.name}, ${this.age} years old. 
+                            I'm a student of ${this.major}. `);
+            }
         }
 
         const student1 = new Student('boutaina', 23, 'solicode');
@@ -28,9 +29,9 @@
         const student2 = new Student('nada', 20, 'solicode');
         student2.introduction();
 
-        const student3 = new Student('ADN',17.5,'solicode');
+        const student3 = new Student('ADN', 17.5, 'solicode');
         student3.introduction();
-
     </script>
 </body>
+
 </html>
