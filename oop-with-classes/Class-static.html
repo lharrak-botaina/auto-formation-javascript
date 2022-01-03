@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       class Car {
+          constructor(brand) {
+            this.carname = brand;
+          }
+          static hello() {  // static method
+            return "Hello hello";
+          }
+        }
+
+mycar = new Car("Ford");
+
+//Call 'hello()' on the class Car:
+console.log(Car.hello())  ;
+
+
+
+
+// Static methods are called directly on the class (Car from the example above) - 
+// without creating an instance/object (mycar) of the class.
+
+//and NOT on the 'mycar' object:
+//document.getElementById("demo").innerHTML = mycar.hello();
+//this would raise an error.
+
+    </script>
+</body>
+</html>
