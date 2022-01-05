@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>My page</h1>
+<div id="div1">Div 1 content...</div>
+<button onclick="printContent('div1')">print</button>
+
+<div id="div2">Div 2 content...</div>
+<button onclick="printContent('div2')">print</button>
+
+<p id="p1">Lorem ipsum dolor sit.</p>
+<button onclick="printContent('p1')">print</button>
+
+
+
+    <script >
+        //el represent this string ('div1') or ('div2')
+            function printContent(el){
+                //allow you to pack all of the whole documents body in restorage var
+                var restorepage = document.body.innerHTML;
+
+                var printcontent =document.getElementById(el).innerHTML;
+                document.body.innerHTML = printcontent
+                window.print();
+                document.body.innerHTML = restorepage
+
+            }
+     </script>
+</body>
+</html>
