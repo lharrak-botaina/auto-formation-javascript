@@ -24,10 +24,11 @@
             function printContent(el){
                 //allow you to pack all of the whole documents body in restorage var
                 var restorepage = document.body.innerHTML;
-
+                //holds just the specific content to be printed
                 var printcontent =document.getElementById(el).innerHTML;
                 document.body.innerHTML = printcontent
                 window.print();
+                //return to the first page after printing
                 document.body.innerHTML = restorepage
 
             }
