@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local storage</title>
+</head>
+<body>
+    <script>
+        var myList = []
+        var myListString = localStorage.getItem("myList")
+        var myListLocal = JSON.parse(myListString)
+        document.write(myListLocal)
+        
+        function onAdd(){
+            var itemInput = prompt("Enter item: ")
+            myList.push(itemInput)
+            var myListJason =  JSON.stringify(myList)
+            localStorage.setItem("myList", myListJason)
+            document.write(myList)
+
+        }
+
+    </script>
+
+    <button onclick="onAdd()">Add</button>
+</body>
+</html>
