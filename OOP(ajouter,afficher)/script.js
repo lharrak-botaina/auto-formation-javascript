@@ -31,7 +31,7 @@ function readwork() {
 
 
 function insertNewRow() {
-    var workList = workManager.getAllItems()
+    var workList = workManager.workList
     var tableBody = document.getElementById("worksTable").getElementsByTagName('tbody')[0];
 
     while (tableBody.rows.length > 0) {
@@ -47,16 +47,10 @@ function insertNewRow() {
         cell3 = newRow.insertCell(2)
 
 
-        var editButton = document.createElement("button")
-        var deleteButton = document.createElement("button")
+        
 
-        var editContent = document.createTextNode("Edit")
-        editButton.appendChild(editContent)
-        editButton.setAttribute('onclick', 'onEdit(this)')
+        
 
-        var deleteContent = document.createTextNode('Delete')
-        deleteButton.appendChild(deleteContent)
-        deleteButton.setAttribute("onclick", 'onDelete(this)')
 
         cell3.appendChild(editButton)
         cell3.appendChild(deleteButton)

@@ -14,7 +14,5 @@ class WorkManager {
     
 
 
-    get workList() {
-        return this.#workList
-    }
+    
 }
