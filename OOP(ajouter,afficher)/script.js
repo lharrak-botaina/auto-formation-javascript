@@ -44,16 +44,8 @@ function insertNewRow() {
         newRow.insertCell(0).innerHTML = workList[i].id;
         cell2 = newRow.insertCell(1);
         cell2.innerHTML = workList[i].title;
-        cell3 = newRow.insertCell(2)
-
 
         
-
-        
-
-
-        cell3.appendChild(editButton)
-        cell3.appendChild(deleteButton)
     }
 
 }
