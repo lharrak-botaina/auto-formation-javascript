@@ -7,14 +7,18 @@
 <script>
 // Exemple d'une fonction normale
 function fonction1 (x){
-    return x + x;
+    return x * x;
 }
 
 // Exemple d'une fonction fléchée
 var fonction2 = x => x * x;
 
+//avec bloc
+var somme =(x,y) => {return x+y;}
 // Exemple d'utilisation de la fonction 
 document.write(fonction2(5));
+document.write('<br>')
+document.write(somme(3,2));
 </script>
 </body>
 </html>
