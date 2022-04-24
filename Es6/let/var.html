@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2> In JavaScript, both the keywords var and let are used to declare variables.
+</h2>
+
+
+<p id="demo"></p>
+<!-- let is block-scoped. -->
+<!-- var is function scoped.  -->
+
+<script>
+//   ----------Var----------------
+
+function greet() {
+    // variable a can be used here
+    var a = 'hello';
+    document.getElementById("demo").innerHTML = a;
+}
+// variable a cannot be used here
+greet(); 
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
