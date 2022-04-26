@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Symbol is a primitive datatype just like Number, String, or Boolean.
+        // It represents a unique "hidden" identifier that no other code can accidentally access.
+        // Symbols are guaranteed to be unique. Even if we create many symbols with the same description
+    let id1 = Symbol("id");
+    let id2 = Symbol("id");
+
+    alert(id1 == id2); // fals
+    </script>
+</body>
+</html>
