@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- the promise has two reults either that promise has completed it resolved
+     or that promise is failed and it is rejected  -->
+
+<script>
+    let p =new Promise ((resolve,reject)=>{
+        let a =1+1
+        if (a==2){
+            resolve("success")
+        }else{
+            reject("failed")
+        }
+    });
+// anything inside of  "then " is going is going to run for resolve 
+    p.then((message)=>{
+        console.log('this is in the then ' +message)
+    }).catch((message) => {
+        console.log('this is in the catch '+message)
+    });
+</script>
+     
+</body>
+</html>
