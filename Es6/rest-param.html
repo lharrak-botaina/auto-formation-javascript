@@ -10,6 +10,20 @@
     <script>
         // The rest parameter (...) allows a function to treat an indefinite number of arguments as an array:
         // https://www.youtube.com/watch?v=eYLaxFOjIOA
+    
+     // function sum (a,b){
+    //     return a+b ;
+    // }
+    // console.log(sum(1,2));
+
+function sum (...args){
+    let total = 0
+    for (let i in args){
+        total+=args[i];
+    }
+    return total;
+}
+console.log(sum(1,2,3,6))
     </script>
 </body>
 </html>
